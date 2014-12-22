@@ -1,0 +1,56 @@
+# www.giallozafferano
+www.giallozafferano.it|recipe|.hrecipe 
+www.giallozafferano.it|title|.fn
+www.giallozafferano.it|ingredients|.ingredient
+www.giallozafferano.it|instructions|.hrecipe div.paragrafi 
+www.giallozafferano.it|duration|.duration
+www.giallozafferano.it|making-time|.duration
+www.giallozafferano.it|cooking-time|.duration
+# ricette.giallozafferano
+ricette.giallozafferano.it|recipe|.hrecipe 
+ricette.giallozafferano.it|title|.fn
+ricette.giallozafferano.it|ingredients|.ingredient
+ricette.giallozafferano.it|instructions|.hrecipe div.paragrafi 
+ricette.giallozafferano.it|duration|.preparazione
+ricette.giallozafferano.it|making-time|.preptime
+ricette.giallozafferano.it|cooking-time|.cooktime
+# blog.giallozafferano
+blog.giallozafferano.it|recipe|div.post 
+blog.giallozafferano.it|title|div.post h1.entry-title a
+blog.giallozafferano.it|ingredients|.ingredient
+blog.giallozafferano.it|instructions|.hrecipe div.paragrafi 
+blog.giallozafferano.it|duration|.duration
+blog.giallozafferano.it|making-time|.duration
+blog.giallozafferano.it|cooking-time|.duration
+# www.cookaround.com
+www.cookaround.com|recipe|.hrecipe 
+www.cookaround.com|title|.fn
+www.cookaround.com|ingredients|.ingredient
+www.cookaround.com|instructions|.hrecipe .text-preparation 
+www.cookaround.com|duration|#recipe-execution-time
+www.cookaround.com|making-time|#recipe-execution-time
+www.cookaround.com|cooking-time|#recipe-cooking-time
+# www.ricettando.it
+www.ricettando.it|recipe|div#content div.entry h1.singletitle
+www.ricettando.it|title|div#content div.entry h1.singletitle
+www.ricettando.it|ingredients|div#content div.entry div.entrybody ul li
+www.ricettando.it|instructions|div#content div.entry div.entrybody ol li
+www.ricettando.it|duration|#recipe-execution-time
+www.ricettando.it|making-time|#recipe-execution-time
+www.ricettando.it|cooking-time|#recipe-execution-time
+# www.cucinare.meglio.it
+www.cucinare.meglio.it|recipe|#recipe-container
+www.cucinare.meglio.it|title|div.container #microdati h1.tit
+www.cucinare.meglio.it|ingredients|span[itemprop=ingredient]
+www.cucinare.meglio.it|instructions|span[itemprop=instructions]
+www.cucinare.meglio.it|duration|#recipe-execution-time
+www.cucinare.meglio.it|making-time|#recipe-execution-time
+www.cucinare.meglio.it|cooking-time|#recipe-execution-time
+# www.lacucinaitaliana.it
+www.lacucinaitaliana.it|recipe|.hrecipe
+www.lacucinaitaliana.it|title|.fn
+www.lacucinaitaliana.it|ingredients|.ingredient
+www.lacucinaitaliana.it|instructions|.instructions
+www.lacucinaitaliana.it|duration|.cooktime
+www.lacucinaitaliana.it|making-time|.cooktime
+www.lacucinaitaliana.it|cooking-time|.cooktime

@@ -31,6 +31,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
     
+    compile("com.h2database:h2")
+    
     compile 'log4j:log4j:1.2.17'
     compile 'commons-io:commons-io:2.4'
     compile 'commons-logging:commons-logging:1.2'
@@ -60,7 +62,11 @@ dependencies {
     compile 'org.apache.james:apache-mime4j:0.7.2'
     compile 'com.sleepycat:je:5.0.73'
     
+    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final'
+    compile 'org.hibernate.common:hibernate-commons-annotations:4.0.5.Final'
+    compile 'org.hibernate:hibernate-core:4.3.8.Final'
     
+    compile 'org.javassist:javassist:3.19.0-GA'
     
     testCompile 'junit:junit:4.11'
     testCompile 'log4j:log4j:1.2.17'

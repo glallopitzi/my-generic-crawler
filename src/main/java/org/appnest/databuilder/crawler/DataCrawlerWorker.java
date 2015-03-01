@@ -5,14 +5,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.appnest.databuilder.DataBuilder;
-import org.appnest.databuilder.DataBuilderModule;
 import org.appnest.databuilder.appdata.RecipeCooker;
-import org.appnest.databuilder.cooker.DataCooker;
-
-import com.google.inject.Guice;
-import com.google.inject.Inject;
-import com.google.inject.Injector;
 
 import edu.uci.ics.crawler4j.crawler.Page;
 import edu.uci.ics.crawler4j.crawler.WebCrawler;

@@ -7,8 +7,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.appnest.databuilder.utils.DataBuilderConfigFileReader;
 import org.appnest.databuilder.utils.DataBuilderConstants;
-
-import com.google.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
@@ -17,23 +16,16 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
 
 public class DataCrawler{
 	
-	@SuppressWarnings("unused")
+	private Logger logger = Logger.getLogger(DataCrawler.class);
+
+	@Autowired
 	private DataCrawlerWorker dataCrawlerWorker;
+	
+	@Autowired
 	private DataCrawlerConfig dataCrawlerConfig;
+	
 	private List<String> seedList;
 	
-	private Logger logger = Logger.getLogger(DataCrawler.class);
-	
-	
-	@Inject
-	public DataCrawler(DataCrawlerWorker dataCrawlerWorker,
-			DataCrawlerConfig dataCrawlerConfig) {
-		super();
-		this.dataCrawlerWorker = dataCrawlerWorker;
-		this.dataCrawlerConfig = dataCrawlerConfig;
-	}
-
-
 	public void init(){
 		dataCrawlerConfig.getConfigFromConstants();
 		

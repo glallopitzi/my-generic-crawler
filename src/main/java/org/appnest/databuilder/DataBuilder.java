@@ -3,26 +3,20 @@ package org.appnest.databuilder;
 import java.util.Date;
 
 import org.apache.log4j.Logger;
-import org.appnest.databuilder.appdata.RecipeCooker;
 import org.appnest.databuilder.cooker.DataCooker;
 import org.appnest.databuilder.crawler.DataCrawler;
-
-import com.google.inject.Guice;
-import com.google.inject.Inject;
-import com.google.inject.Injector;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class DataBuilder{
 
-	private DataCrawler dataCrawler;
-	private DataCooker dataCooker;
-	
 	private Logger logger = Logger.getLogger(DataBuilder.class);
 	
-	@Inject
-	public DataBuilder(DataCrawler dataCrawler, DataCooker dataCooker){
-		this.dataCrawler = dataCrawler;
-		this.dataCooker = dataCooker;
-	}
+	@Autowired
+	private DataCrawler dataCrawler;
+	
+	@Autowired
+	private DataCooker dataCooker;
+	
 	
 	public void init(){
 		logger.info("in DataBuilder init()");
@@ -41,21 +35,6 @@ public class DataBuilder{
 //		logger.info("starting cooking session " + new Date());
 //		dataCooker.cookData();
 //		logger.info("stopping cooking session " + new Date());
-	}
-	
-	
-	
-	
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) throws Exception {
-		Injector injector = Guice.createInjector(new DataBuilderModule());
-		DataBuilder dataBuilder = injector.getInstance(DataBuilder.class);
-		dataBuilder.init();
-		dataBuilder.buildData();
-
 	}
 	
 }
